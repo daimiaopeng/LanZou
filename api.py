@@ -32,14 +32,17 @@ def get_zhilian(share_url):
         "user-agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3672.400 QQBrowser/10.4.3448.400"
     }
     downloads_page = session.get(url = downloads_url, headers = headers).text
-    sign = re.search('sign.{89}',downloads_page).group()[7:89]
+    try:
+        sign = re.search('sign.{89}',downloads_page).group()[7:89]
+    except:
+        sign = re.search('var sg = \'.{0,100}\'',downloads_page).group()[7:89]
     ajaxm_url = 'https://www.lanzous.com/ajaxm.php'
     data = {
         'action': 'downprocess',
         'sign': sign
     }
     file_data = session.post(url=ajaxm_url, data=data, headers = headers_d).json()
-    zhilian = file_data['dom']+'/file/'+file_data['url']+'='
+    zhilian = str(file_data['dom'])+'/file/'+str(file_data['url'])+'='
     return zhilian
 
 
