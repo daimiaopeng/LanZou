@@ -1,8 +1,5 @@
 # lanzou
 
-## 测试
-![测试](http://1787005804808765.cn-shanghai.fc.aliyuncs.com/2016-08-15/proxy/img_url/main/img?url=https://www.lanzous.com/i6aa3hg)
-<img src="http://1787005804808765.cn-shanghai.fc.aliyuncs.com/2016-08-15/proxy/img_url/main/img?url=https://www.lanzous.com/i6aa3hg" >
 
 ## 用法:
 
