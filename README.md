@@ -7,5 +7,5 @@
 
 ## 原理：
 
-<http://img.abigmiu.club/img?url=https://www.lanzous.com/i6aa3hg>， 其实就是我服务器通过解析分享链接然后重定向下载直链，从而获取资源，你也可以通过这个直接获取其它文件的下载直链，不限于做图床。
+<http://1787005804808765.cn-shanghai.fc.aliyuncs.com/2016-08-15/proxy/img_url/main/img?url=https://www.lanzous.com/i6aa3hg>， 其实就是我服务器通过解析分享链接然后重定向下载直链，从而获取资源，你也可以通过这个直接获取其它文件的下载直链，不限于做图床。
 
